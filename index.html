@@ -13,7 +13,13 @@
       {
         top:0;
         left:0;
+        width: 100%;
         position:fixed;
+
+      }
+
+      #welcome-section {
+        margin-top:10vh;
       }
 
       @media (min-width:600px)
@@ -34,49 +40,44 @@
         }
     </style>
   </head>
-
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#projects" class="navlink" >Projects</a></li>
-          <li><a href="#p2" class="navlink" >project 2</a></li>
-
-        </ul>
-      </nav>
-      <p>Hello World, we are software developers!</p>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#projects" class="navlink">Projects</a></li>
+        <li><a href="#profile" class="navlink">Profile</a></li>
+      </ul>
+    </nav>
+      <div id="play"><p>Hello World, we are software developers!</p></div>
       <section id="welcome-section">
-        <h1> Welcome to the personal webpage of John Doe <h1>
+        <h1> Welcome to the personal webpage of John Doe </h1>
+          <img src="portfolio.jpeg"/>
       </section>
-      <br><br><br> <br><br><br>  <br><br><br> <br><br><br>   <br><br><br> <br><br><br>
-        <br><br><br> <br><br><br>
-          <br><br><br> <br><br><br>
-            <br><br><br> <br><br><br>
-      <section id="projects"  >
+
+      <section id="projects">
+        <h1>Projects</h1>
         <div class="project-tile">
           <a href="https://github.com" id="#p1">Project 1</a>
-            Project 1 was done in Java.
+            Project 1 was done in Java. <br><br>
           <a href="https://github.com" id="#p2">Project 2</a>
-            Project 2 was done in Python
+            Project 2 was done in Python <br><br>
           <a href="https://github.com" id="#p3">Project 3</a>
-            Project 3 was a HTML/CSS based project
+            Project 3 was a HTML/CSS based project <br><br>
         </div>
       </section>
+
+      <section id="profile" id="profile-link">
+        <h1>Profile Links</h1>
+        <br><br>
       <div>
         <a id="profile-link" href="https://github.com/Lichapa/21AprilMicroverseChallenge" target="_blank"> Github Profile</a>
+        GitHub is where people build software. More than 40 million people use GitHub to discover, fork, and contribute to over 100 million projects
+        <br><br>
+        <a id="profile-link" href="https://www.behance.net/gallery/62050311/2018-Portfolio-Samples" target="_blank"> Behance Profile</a>
+        Behance is a social media platform owned by Adobe which aims "to showcase and discover creative work".
+        <br><br>
       </div>
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    </section>
     <script  src="js/index.js"></script>
   </body>
 </html>
